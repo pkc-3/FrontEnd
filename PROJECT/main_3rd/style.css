@@ -1,0 +1,45 @@
+body{padding-top:90px;}/*메뉴바 고정으로 글자 없어지는거 방지 네브바 높이만큼 내려준다.*/
+a{text-decoration: none;color: inherit;}
+.container-fluid{
+  padding: 0;
+} /*약간 띄워진거가 디폴트로 되어있어서 0을 넣는다.*/
+.logbar{z-index: 1;}
+.navbar{
+  background-color: #fff;
+  border:none;
+  font-size: 18px;
+  border-bottom: 1px solid #aaa;
+  height: 90px;
+}
+.navbar-header{
+  height: 60px;
+}
+.navbar-toggle{
+  height: 45px;
+  width: 45px;
+}
+.icons{
+  float: left;  
+  font-size: 30px;color: #fff;background-color: #ff8000;
+  padding: 20px;border-radius: 50%;text-align: center;
+  margin-right: 15px;border:1px solid #ff8040;transition: all 0.3s;
+}
+.icons:hover{background-color: #0080c0;}
+.icontxt h4{color: #0080ff;font-weight: bold;}
+.icontxt p{color: #2e2f28;}
+.gap{margin: 50px 0;}
+
+header{color: #fff;text-align:center;padding: 40px 0;}
+header small{color: #fff;}
+header p{color: #c0c0c0;}
+
+.content1{background:url("imgs/slide1_bg.jpg") no-repeat fixed;background-size: cover;}
+.book1, .book2, .book3{
+  float:left;
+}
+.book2, .book3{
+  margin-left:-100px;
+}
+#about,#portfolio,#contact{
+  padding-top: 85px;
+}

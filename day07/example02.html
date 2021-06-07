@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<script>
+			var arrNum=new Array();
+			var arrTitle=new Array();
+			var arrBoard=new Array();
+			var arrDate=new Array();
+			var arrTime=new Array();
+			var cnt=-1;
+		function input() {
+			cnt++;
+			arrNum[cnt]=frm1.num.value;
+			arrTitle[cnt]=frm1.title.value;
+			arrBoard[cnt]=frm1.board.value;
+			arrDate[cnt]=frm1.dd.value;
+			arrTime[cnt]=frm1.tt.value;
+
+			frm1.num.value="";
+			frm1.title.value="";
+			frm1.board.value="";
+			frm1.dd.value="";
+			frm1.tt.value="";
+			frm1.num.focus();
+		}
+		function output() {
+			document.write("<table border=1 class=p1>");
+			document.write("<th>");
+			document.write("연번");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("제목");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("내용");
+			document.write("</th>");			
+			document.write("<th>");
+			document.write("날짜");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("시간");
+			document.write("</th>");		
+
+
+			for(i=0;i<=cnt;i++){
+				document.write("<tr>");
+				document.write("<td>");
+				document.write(arrNum[i]);
+				document.write("</td>");
+				document.write("<td>");
+				document.write(arrTitle[i]);
+				document.write("</td>");
+				document.write("<td>");
+				document.write(arrBoard[i]);
+				document.write("</td>");				
+				document.write("<td>");
+				document.write(arrDate[i]);
+				document.write("</td>");
+				document.write("<td>");
+				document.write(arrTime[i]);
+				document.write("</td>");
+				document.write("</tr>");
+			}
+			document.write("</table>");
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		연번 <input type="text" name="num" size="10"><br>
+		제목 <input type="text" name="title"><br>
+		내용 <input type="textarea" name="board"><br>
+		날짜 <input type="date" name="dd"><br>
+		시간 <input type="time" name="tt"><br>
+		<input type="button" value="입력" onclick="input()">
+		<input type="button" value="출력" onclick="output()">
+	</form>
+</body>
+</html>

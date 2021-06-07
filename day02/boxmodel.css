@@ -1,0 +1,9 @@
+
+.divParent{
+	width: 200px;height: 200px;
+	background-color: yellow;
+	margin-top: 20px;margin-left: 20px;
+	padding-top: 20px;padding-left: 20px;
+	border-top:10px solid green;
+	box-shadow: 5px 5px 10px #000 ;
+}

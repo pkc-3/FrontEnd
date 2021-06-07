@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function send() {
+			var user_id=(frm1.id.value);
+			var user_pw=(frm1.pw.value);
+			var user_gender=(frm1.gender.value);
+			var user_grade=(frm1.grade.value);
+			var user_interest="";
+			var user_txt=(frm1.txt.value);
+			if(document.getElementById("java").checked==true){
+				user_interest=user_interest+frm1.p1.value+" ";
+			}
+			if(document.getElementById("c").checked==true){
+				user_interest=user_interest+frm1.p2.value+" ";
+			}
+			if(document.getElementById("web").checked==true){
+				user_interest=user_interest+frm1.p3.value+" ";
+			}
+			if(document.getElementById("python").checked==true){
+				user_interest=user_interest+frm1.p4.value+" ";
+			}
+			confirm("회원님의 아이디는 "+user_id+"입니다. 선택한 성별은 "+user_gender+"입니다. 최종학력은 "+user_grade+"이고 주요 관심언어는 "+user_interest+"입니다. 남기신 말은 "+user_txt+"입니다. 맞습니까?");
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		아이디 : <input type="text" name="id"><br>
+		비밀번호 : <input type="password" name="pw"><br>
+		성별 : <input type="radio" name="gender" value="남성" checked>남성
+				<input type="radio" name="gender" value="여성">여성<br>
+		최종학력 : 
+		<select name="grade">
+				<option value="고졸">고졸</option>
+				<option value="대졸">대졸</option>
+				<option value="초대졸">초대졸</option>
+				<option value="대학원졸">대학원졸</option>
+				<option value="박사">박사</option>
+		</select><br>
+
+		관심사항 :
+			<input type="checkbox" name="p1" id="java" value="자바">자바
+			<input type="checkbox" name="p2" id="c" value="c">C
+			<input type="checkbox" name="p3" id="web" value="web">web
+			<input type="checkbox" name="p4" id="python" value="python">python
+			<br>
+		남기고 싶은말 : <input type="textarea" name="txt"><br>
+		<input type="button" value="회원가입" onclick="send()">
+	</form>
+</body>
+</html>

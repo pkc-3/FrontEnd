@@ -1,0 +1,42 @@
+*{padding: 0 auto;margin: 0;list-style: none;}
+a{text-decoration: none;}
+body{margin-top: 90px;}
+.navbar-brand{width: 140px;height: 60px;padding: 0;}
+
+.logo>a>img{width: 100%;height: 100%}
+.logbar{margin-bottom: -20px;}
+
+.item{width: 100%;height: 400px;}
+.item img{width:100%;}
+.id_title{font-family: 'Hi Melody', cursive;text-align:center;font-size: 30px;}
+
+.glyphicon{font-size: 40px;color: orange;}
+.icons{
+  float: left;text-align: center;
+  margin-right: 15px;transition: all 0.3s;
+}
+.glyphicon:hover{color: skyblue;}
+.icontxt h4{font-weight: bold;}
+.icontxt p{font-scolor: #2e2f28;}
+.content1{background:url("images/slide1_bg.jpg") no-repeat fixed;background-size: cover;}
+.book1{width: 250px;}
+
+.thumbnail_title{text-align:center; font-family:'Noto Serif KR', serif;font-size: 22px;color: brown}
+.pics_tag{text-align:center;}
+
+
+.foot{font-size: 20px;color: brown;}
+.foot1{font-size: 20px;color: brown;font-weight: bold;font-family: 'Hi Melody', cursive;}
+
+.left carousel-control,.right carousel-control{height: 400px;}
+@media(max-width: 767px){
+	.pics{height: 250px;}
+	.item img{width:100%;height: 100px}
+	.carousel-inner{width:100%;height: 250px;}
+	.row{top: -25%;}
+	.thumbnail_title{text-align:center; font-family:'Noto Serif KR', serif;font-size: 12px;color: brown}
+	.site>p{font-size: 9px;}
+	.content1{background:url("images/slide1_bg.jpg") no-repeat fixed;background-size: cover;}
+	.btn-primary{margin-top: 2px;}
+	.table-bordered{margin-top: 100px;}
+}

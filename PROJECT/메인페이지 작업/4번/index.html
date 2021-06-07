@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script src="script.js" defer="defer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="top">
+		<div class="logo">
+			<a href="index.html"><img src="logo/LOGO.png"></a>
+		</div>
+		<nav>
+			<ul class="menu">
+				<li>동호회소개
+					<ul class="submenu">
+						<li><a href="#">동호회1</a></li>
+						<li><a href="#">동호회1</a></li>
+						<li><a href="#">동호회1</a></li>
+					</ul>
+				</li>
+				<li>갤러리
+					<ul class="submenu">
+						<li><a href="#">갤러리1</a></li>
+						<li><a href="#">갤러리1</a></li>
+						<li><a href="#">갤러리1</a></li>
+					</ul>
+				</li>
+				<li>교육안내
+					<ul class="submenu">
+						<li><a href="#">교육안내1</a></li>
+						<li><a href="#">교육안내1</a></li>
+						<li><a href="#">교육안내1</a></li>
+					</ul>
+				</li>
+				<li>Contact
+					<ul class="submenu">
+						<li><a href="#">Contact1</a></li>
+						<li><a href="#">Contact1</a></li>
+						<li><a href="#">Contact1</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div id="imgslide">
+		<div class="welcome"><h4>무빙사진갤러리</h4></div>
+		<div class="imgs">
+			<img src="images/slide/images(1).jpg">
+			<img src="images/slide/images(2).jpg">
+			<img src="images/slide/images(3).jpg">
+			<img src="images/slide/images(4).jpg">
+			<img src="images/slide/images(5).jpg">
+		</div>
+		<div class="btn_dot">
+			<ul>
+			<li><a href="#" imgLeft="0px"><img src="images/slide/dot.png"></a></li>
+			<li><a href="#" imgLeft="-1000px"><img src="images/slide/dot.png"></a></li>
+			<li><a href="#" imgLeft="-2000px"><img src="images/slide/dot.png"></a></li>
+			<li><a href="#" imgLeft="-3000px"><img src="images/slide/dot.png"></a></li>
+			<li><a href="#" imgLeft="-4000px"><img src="images/slide/dot.png"></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="mid">
+		<div class="m_left"><h3 style="text-align: center">공지사항</h3><br>
+			<table class="table1" style="table-layout: fixed" >
+				<tr>
+					<td>제 30회 정기출사 및 모임이 있습니다.</td>
+					<td>2019-2-2</td>
+				</tr>
+				<tr>
+					<td>대한민국 사진공모전이 개최됩니다. 참여해보세요.</td>
+					<td>2019-2-1</td>
+				</tr>
+				<tr>
+					<td>대한민국의 자연 사진 전시회가 있습니다.</td>
+					<td>2019-1-11</td>
+				</tr>
+				<tr>
+					<td>포토그래머와 함께하는 사진 설명회가 있습니다.</td>
+					<td>2019-1-3</td>
+				</tr>
+				<tr>
+					<td>무빙동호회에 오신것을 환영합니다. 회원가입은 여기서 하시면 됩니다.</td>
+					<td>2018-12-31</td>
+				</tr>
+			</table>
+			
+		</div>
+		<div class="m_right"><h3 style="text-align: center">partner site</h3>
+			<div class="partner">
+				<img src="images/partner/partner.png">
+			</div>
+			<div class="partner_up">
+				<div class="temp">
+					<img src="images/partner/partner_up.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="icons">
+		<div class="icons_frame">
+			<div class="icons_box">
+				<img src="images/icons/icon1.png">
+				<input type="button" value="커뮤니티" id="btn">
+			</div>
+			<div class="icons_box">
+				<img src="images/icons/icon2.png">
+				<input type="button" value="전시회" id="btn">
+			</div>
+			<div class="icons_box">
+				<img src="images/icons/icon3.png">
+				<input type="button" value="정보마당" id="btn">
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer_frame">
+			<div class="footer_left">
+				<div class="footer_box"><a href="#">법적고지</a></div>
+				<div class="footer_box"><a href="#">개인정보취급방침</a></div>
+				<div class="footer_box"><a href="#">개인정보처리방침</a></div>
+			</div>
+			<div class="footer_right">
+				<div class="footer_info">
+					상호명:무빙사진동호회<br>
+					대표자:김갑돌<br>
+					개인정보관리책임자:유관순<br>
+					사업장주소:부산광역시 금정구 가산동 가산디지털 3호</div>
+			</div>
+		</div>
+	</footer>
+	<form name="frmpopup" method="post">
+		<div id="pop01">
+			<div style="height: 350px;">무빙사진 동호회 신규가입 이벤트<br><br><br>
+				<a href="#"><b>회원가입 바로가기</b></a>			
+			</div>
+			<div>
+				<input type="checkbox" name="pop_ck" value="checkbox"/>오늘 하루 이 창을 다시 열지 않음
+				<div id="close01" style="width:100px; margin:auto; cursor:pointer">close</div>
+			</div>
+		</div>
+	</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

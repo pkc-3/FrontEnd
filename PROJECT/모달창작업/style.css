@@ -1,0 +1,29 @@
+@charset "utf-8";
+*{
+	margin:0 auto;
+	padding:0;
+	list-style:none;
+	font-family:"맑은 고딕";
+}
+a{
+	text-decoration:none;color:inherit;
+}
+#partner{width: 250px;cursor: pointer;}
+#partner img{width: 100%;display: block;}
+
+#partner_up{z-index: 1;background-color: rgba(0,0,0,0.7);position: fixed;
+width: 100%;height: 100%;top:0px;left: 0px;display: none}
+#partner_up .body{
+	margin-top: 50px;width: 500px;padding: 15px 0;text-align: center;background-color: #fff;
+}
+#partner_up .body img{
+	display: block;
+}
+
+#partner_up .body .btnClose{padding:6px 12px;background-color: #009688;
+	color: #fff;border:none;border-radius: 5px;cursor: pointer}
+
+#partner_up.active{
+	display:block;
+}
+/*active 클래스를 즉석 제작(id태그랑 붙일것)*/

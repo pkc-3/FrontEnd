@@ -1,0 +1,41 @@
+<script>
+	function send(){
+		if(frm1.title.value==""){
+			alert("제목을 입력하시오");
+		}
+	}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name="frm1" action="test06_ok.html">
+		관심분야:
+		<input type="checkbox" name="chk1">파이썬
+		<input type="checkbox" name="chk2">자바
+		<input type="checkbox" name="chk3">빅데이터
+		<input type="checkbox" name="chk4">html,css
+		<input type="checkbox" name="chk5">javascript
+		<br>
+		타입:
+		<select name="type">
+			<option>질문과 답변</option>
+			<option>자유게시판</option>
+			<option>비밀글</option>
+		</select><br>
+		성별:
+		<input type="radio" name="gender" checked>남성
+		<input type="radio" name="gender">여성<br>
+		제목:
+		<input type="text" name="title" size="50"><br>
+		내용:
+		<textarea name="content" rows="10" cols="65">
+		</textarea><br>
+		<input type="button" value="전송" onclick="send()">
+		<input type="submit" value="전송2">
+		<input type="reset" value="새로작성">
+	</form>
+</body>
+</html>

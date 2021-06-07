@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function send(){
+			var numK=parseInt(frm1.korean.value);
+			var numE=parseInt(frm1.english.value);
+			var numM=parseInt(frm1.math.value);
+
+			var total=numK+numE+numM;
+			var average=parseInt(total/3);
+			var point;
+			if(average>=90){
+				point="A";
+			}
+			else if(average>=80){
+				point="B";
+			}
+			else if(average>=70){
+				point="C";
+			}
+			else if(average>=60){
+				point="D";
+			}
+			else if(average<=59){
+				point="F";
+			}
+
+			alert("총점은 : "+total+" 점입니다."+"\n"+"평균점수는 : "+average+" 점입니다."+"\n"+"학점은 : "+point+" 학점입니다.");		
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		국어:<input type="text" name="korean"><br>
+		영어:<input type="text" name="english"><br>
+		수학:<input type="text" name="math"><br>
+		<input type="button" value="결과출력" onclick="send()">
+	</form>
+</body>
+</html>

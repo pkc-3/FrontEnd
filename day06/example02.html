@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function order() {
+			var user_name=(frm1.person.value);
+			var user_address=(frm1.address.value);
+			var user_money=(frm1.money.value);
+			var user_way=(frm1.way.value);
+			confirm(user_name+"님 주문 감사드립니다. 배송지는 "+user_address+"이며, 금액은 "+user_money+"원이며, 결재방법은 "+user_way+" 를 선택하셨습니다.정보가 맞나요?");
+			// body...
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		주문자 : <input type="text" name="person">
+		배송지 : <input type="text" name="address">
+		금액   : <input type="text" name="money">
+		<select name="way">
+			<option value="무통장입금">무통장입금</option>
+			<option value="신용카드">신용카드</option>
+			<option value="포인트결제">포인트 결제</option>
+		</select>
+		<input type="button" value="주문하기" onclick="order()">
+	</form>
+</body>
+</html>

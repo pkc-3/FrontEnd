@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function send() {
+			if(confirm("정말로 시작하시겠습니까?")){
+				var i=prompt("몇단을 입력할까요?");
+				var j=parseInt(i);
+				document.write(+j+"단 입니다.<br>");
+				for(var a=1;a<10;a++){
+					document.write(+j+" * "+a+" = "+(j*a)+"<br>");
+				}
+				return false;
+			}
+			
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		단수를 입력해주세요 : <input type="button" value="구구단입력" onclick="send()">
+	</form>
+</body>
+</html>

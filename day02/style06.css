@@ -1,0 +1,21 @@
+*{
+	margin: 0 auto;padding: 0;
+	list-style: none;font-family: "맑은 고딕";
+}
+
+a{text-decoration: none;color: inherit;}
+
+.menu1{
+
+}
+.menu1>li:nth-child(2){color: green;}
+.menu1>li:nth-child(3){color: red;font-weight: bold;}
+/*메뉴안의 자식들을 의미하는 > 표시, :nth-child(n) n번째 자식만 지정*/
+/*마지막 자식의 글자색을 파란색으로 표현하라*/
+.menu1>li:last-child{color: blue;}
+/*첫번째 자식의 글자색을 노란색으로 표현하라*/
+.menu1>li:first-child{color: yellow;}
+/*짝수자식의 글자크기를 25px로 하라*/
+.menu1>li:nth-child(2n){font-size: 25px;}
+/*홀수자식의 글자크기를 10px로 하라(hover 기능은 마우스 가져다 댔을때 작용*/
+.menu1>li:nth-child(2n-1):hover{font-size: 10px;}

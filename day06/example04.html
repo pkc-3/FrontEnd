@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function send() {
+			
+		var score=40;
+		var name=(frm1.name.value);
+		var grade=(frm1.grade.value);
+		score=score+parseInt(grade);//value자체를 점수로 바꿔놓으면 된다.
+
+		var major=(frm1.major.value);
+		score=score+parseInt(major);
+
+		if(document.getElementById("com1").checked==true){
+			score=parseInt(score)+5;
+		}
+		if(document.getElementById("com2").checked==true){
+			score=parseInt(score)+5;
+		}
+		if(document.getElementById("com3").checked==true){
+			score=parseInt(score)+5;
+		}
+		if(document.getElementById("com4").checked==true){
+			score=parseInt(score)+5;
+		}
+
+		if(document.getElementById("lan1").checked==true){
+			score=parseInt(score)+5;
+		}
+		if(document.getElementById("lan2").checked==true){
+			score=parseInt(score)+5;
+		}
+		if(document.getElementById("lan3").checked==true){
+			score=parseInt(score)+5;
+		}
+		if(document.getElementById("lan4").checked==true){
+			score=parseInt(score)+5;
+		}
+
+		if(score>=80){
+			alert("최종점수는 "+score+"점입니다.")
+			alert("합격입니다.")
+		}
+		else{alert("최종점수는 "+score+"점입니다.")
+			alert("탈락입니다.")}
+
+		}
+	</script>
+</head>
+<body> 
+	<form name="frm1">
+		이름 <input type="text" name="name"><br>
+		학력 <select name="grade">
+			<option value="5">고졸</option>
+			<option value="5">초대졸</option>
+			<option value="10">대졸</option>
+			<option value="10">대학원</option>
+			<option value="10">박사</option>
+			</select><br>
+		전공여부<input type="radio" name="major" value="10" checked id="w1">전공
+				<input type="radio" name="major" value="5" id="w2">비전공<br>
+		자격증 <input type="checkbox" name="p1" id="com1" value="정보처리">정보처리
+				<input type="checkbox" name="p2" id="com2" value="컴활">컴활
+				<input type="checkbox" name="p3" id="com3" value="gtq">gtq
+				<input type="checkbox" name="p4" id="com4" value="웹디자인기사">웹디자인기사<br>
+		외국어 <input type="checkbox" name="q1" id="lan1" value="영어">영어
+				<input type="checkbox" name="q2" id="lan2" value="중국어">중국어
+				<input type="checkbox" name="q3" id="lan3" value="일본어">일본어
+				<input type="checkbox" name="q4" id="lan4" value="독일어">독일어<br>
+		<input type="button" value="면접지원여부확인" onclick="send()">
+	</form>
+</body>
+</html>

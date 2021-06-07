@@ -1,0 +1,31 @@
+*{margin:0 auto;padding: 0;list-style:none;font-family: "맑은 고딕"}
+a{text-decoration: none;color: inherit;}
+
+
+
+header{width: 100%;height: 110px;}
+.logo{width: 250px;height: 110px;}
+.logo>a>img{width: 100%;height: 100%;}
+
+nav{width: 100%;height: 50px;background-color: #666;}
+.menu{width: 600px;}
+.menu>li{float: left;width: 200px;text-align: center;transition: all 0.4s;padding:7px 0;
+	margin-top:7px;color: #fff;position: relative;}
+.menu>li:hover{background-color: #4298cc;color: #fff;}
+
+
+.submenu{position: absolute;width: 100%;background-color: rgba(255,255,255,0.5);
+	margin-top:7px;z-index: 99;display: none;}
+.submenu>li{padding: 7px 0;color: #000;transition: all 0.4s;}
+.submenu>li:hover{background-color: #4298cc;color: #fff;}
+
+
+
+#imgslide{width: 100%;height: 350px;background-color: #ccdce2;padding: 40px 0;
+	position: relative;box-shadow:inset 2px 2px 20px #3b6778;}
+.imgs{width: 1000px;height: 350px;position: relative;background-color: #000;}
+.imgs img{width: 100%;height: 100%;position: absolute;}
+.welcome{width: 500px;height: 50px;position: absolute;z-index: 1;
+	background-color: rgba(255,255,255,0.5);color: #893700;font-size: 1.2em;
+	font-weight: bold;text-align:center;line-height: 50px;top:45%;left: 50%;
+	transform: translateX(-50%);}

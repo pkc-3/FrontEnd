@@ -1,0 +1,9 @@
+*{margin: 0 auto;padding: 0;list-style: none;font-family: "맑은 고딕"}
+a{text-decoration: none;color: inherit;}
+
+#imgslide{width: 1000px;height: 400px;position: relative;overflow: hidden;}
+.imgs{width: 5000px;height: 400px;position: absolute;}
+.imgs>img{width: 1000px;height: 400px;float: left;}
+.btn_dot{position: relative;width: 80px;height: 15px;
+	text-align: center;margin:20px auto;}
+.btn_dot>ul>li{float: left;width: 15px;height: 15px;}

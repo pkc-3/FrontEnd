@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		var arrNo=new Array();
+		var arrName=new Array();
+		var arrKor=new Array();
+		var arrEng=new Array();
+		var arrMath=new Array();
+		var arrTot=new Array();
+		var arrAvg=new Array();
+		var arrGrade=new Array();
+		var cnt=-1;
+		function input() {
+			var temp;
+			cnt++;
+			arrNo[cnt]=frm1.no.value;
+			arrName[cnt]=frm1.name.value;
+			arrKor[cnt]=parseInt(frm1.kor.value);
+			arrEng[cnt]=parseInt(frm1.eng.value);
+			arrMath[cnt]=parseInt(frm1.math.value);
+			arrTot[cnt]=arrKor[cnt]+arrEng[cnt]+arrMath[cnt];
+			arrAvg[cnt]=arrTot[cnt]/3;
+			temp=arrAvg[cnt];
+			if(temp>=90){temp="수";}
+			else if(temp>=80){temp="우";}
+			else if(temp>=70){temp="미";}
+			else if(temp>=60){temp="양";}
+			else{temp="가";}
+			frm1.no.value="";
+			frm1.name.value="";
+			frm1.kor.value="";
+			frm1.eng.value="";
+			frm1.math.value="";
+			frm1.no.focus();
+			arrGrade[cnt]=temp;
+		}
+		function output() {
+			document.write("<table border=1>");
+			
+			document.write("<th>");
+			document.write("학번");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("이름");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("국어");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("영어");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("수학");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("총점");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("평균");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("학점");
+			document.write("</th>");
+			//루프
+			for(i=0;i<=cnt;i++){
+			document.write("<tr>");
+			document.write("<td>");
+			document.write(arrNo[i]);
+			document.write("</td>");
+			document.write("<td>");
+			document.write(arrName[i]);
+			document.write("</td>");
+			document.write("<td>");
+			document.write(arrKor[i]);
+			document.write("</td>");
+			document.write("<td>");
+			document.write(arrEng[i]);
+			document.write("</td>");
+			document.write("<td>");
+			document.write(arrMath[i]);
+			document.write("</td>");
+			document.write("<td>");
+			document.write(arrTot[i]);
+			document.write("</td>");
+			document.write("<td>");
+			document.write(arrAvg[i]);
+			document.write("</td>");
+			document.write("<td>");
+			document.write(arrGrade[i]);
+			document.write("</td>");
+			document.write("</tr>");
+			}
+			//루프종료
+			document.write("</table>")
+			
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		학번<input type="text" name="no"><br>
+		이름<input type="text" name="name"><br>
+		국어<input type="text" name="kor"><br>
+		영어<input type="text" name="eng"><br>
+		수학<input type="text" name="math"><br>
+		<input type="button" value="입력" onclick="input()">
+		<input type="button" value="출력" onclick="output()">
+	</form>
+</body>
+</html>

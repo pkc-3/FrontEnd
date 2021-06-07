@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script>
+		$(function () {
+			$("#btn1").click(function () {
+				$("#area1").css("background-color","red");
+				$("#area1").css("border","2px solid green");
+				$("#area1").css("width","500px");
+				$("#area1").css("height","500px");
+			})
+			$("#btn2").click(function () {
+				$("#area1").css("border","0");
+				$("#area2").css("width","100px");
+				$("#area2").css("height","100px");
+			})
+		});
+	</script>
+</head>
+<body>
+	<div id="area1">area1</div>
+	<div id="area2">area2</div>
+	<input type="button" value="area1" id="btn1">
+	<input type="button" value="area2" id="btn2">
+</body>
+</html>

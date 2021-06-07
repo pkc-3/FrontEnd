@@ -1,0 +1,8 @@
+*{margin: 0 auto;padding: 0;list-style: none;font-family: "맑은 고딕"}
+a{text-decoration: none;color: inherit;}
+
+#img{width: 1000px;height: 250px;position: relative;}
+.welcome{position: absolute;z-index: 1;width: 100px;height: 50px;top: 45%;left: 50%;
+	transform: translateX(-50%);line-height: 50px;background-color: gray;text-align: center}
+.imgFrame{width: 1000px;height: 250px;position: relative;}
+.imgFrame img{width: 100%;height: 100%; position: absolute;display: block;}

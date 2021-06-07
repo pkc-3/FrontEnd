@@ -1,0 +1,6 @@
+*{margin: 0 auto;padding: 0;list-style: none;font-family: "맑은 고딕"}
+a{text-decoration: none;color: inherit;}
+
+#slide{width: 500px;height: 50px;border:1px solid #000;overflow: hidden;}
+.newsframe{width: 500px;height: 50px;position: relative;}
+.newsframe p{font-size:35px;position:absolute;height: 50px;}

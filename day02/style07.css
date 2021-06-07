@@ -1,0 +1,32 @@
+*{
+	margin: 0 auto;padding: 0;
+	list-style: none;font-family: "맑은 고딕";
+}
+
+a{text-decoration: none;color: inherit; }
+
+.table1{
+	border-top: 2px solid #999;
+	border-bottom: 2px solid #999;
+	margin-top: 50px;
+	border-collapse: collapse;
+	/*collapse 약간의 틈 병합 기능*/
+}
+.table1 tr>th{
+	border-bottom: 1px solid #999;
+	padding: 5px;
+}
+.table1 tr>td{
+	border-bottom: 1px solid #999;padding: 5px;
+}
+.table1 tr:nth-child(2n){
+	background-color: #999;
+}
+.table1 tr:not(:first-child):hover{
+	background-color: orange;
+	cursor: pointer;font-weight: bold;color: #fff;
+}
+/*맨 첫줄만 작동 안하게 만들기*/
+.table1 tr>td:nth-child(2){
+	color: blue;
+}

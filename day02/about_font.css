@@ -1,0 +1,27 @@
+*{margin: 0 auto;padding: 0;list-style: none;font-family: "맑은 고딕"}
+a{text-decoration: none;color: inherit;}
+.grd1{
+	width: 500px;height: 250px;
+	border:1px dotted #000;
+	font-size: 0.9em;
+	text-align: center;
+	color: #18709c;
+	font-weight: bold;
+	font-family: "궁서체";
+	line-height: 15px;
+}
+.grd2{
+	width: 500px;height: 150px;
+	border: 1px dotted #000;
+	text-align: center;
+	/*문장이 한줄일때 수직정렬기능 사용(line-height값=height값) */
+	line-height: 150px;
+}
+/*웹폰트 지정*/
+/*font.google.com에 접속 -> 선택 -> select this style-> 
+링크부분 복사 후 html link부분에 붙여넣기 -> 적용할 클래스에 font-family속성*/
+.grd3{
+	font-family: 'Nanum Pen Script', cursive;
+	width: 500px;height: 150px;
+	border: 1px solid #000;
+}

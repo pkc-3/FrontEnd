@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>급여계산기</title>
+	<script>
+		function send() {//기본급,시간외수당,총급여 총 3개 변수선언 먼저
+			var grade;
+			var wtime;
+			var total;
+			if(frm1.grade.value=="부장"){
+				grade = 200;
+			}
+			else if(frm1.grade.value=="과장"){
+				grade = 150;
+			}
+			else if(frm1.grade.value=="대리"){
+				grade = 120;
+			}
+			wtime=parseInt(frm1.wtime.value)*2;
+			total = (grade+wtime)*10000;
+			alert("총급여는"+total+"원입니다.")
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		직급: <select name="grade">
+				<option value="부장">부장</option>
+				<option value="과장">과장</option>
+				<option value="대리">대리</option>
+			</select><br>
+		시간외근무: <input type="text" name="wtime">시간<br>
+		<input type="button" value="월급계산" onclick="send()">	
+	</form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+*{
+	margin: 0 auto; font-family: "맑은고딕"; padding: 0;
+}
+
+
+#header{
+	width: 1000px;height: 410px;
+	border: 2px solid;
+	padding: 5px;
+}
+
+.left{
+	width: 235px;float: left;height: 400px;
+	background-color: white;
+	border: 5px solid;
+	margin: 1px;
+	text-align: center;
+}
+.middle{
+	width: 493px;float: left;height: 400px;
+	background-color: white;
+	border: 5px solid;
+	margin: 1px;
+	text-align: center;
+}
+.right{
+	width: 235px;float: left;height: 400px;
+	background-color: white;
+	border: 5px solid;
+	margin: 1px;
+	text-align: center;
+}

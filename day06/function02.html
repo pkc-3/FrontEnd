@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function total(k,e,m) {
+			var kor=parseInt(k);
+			var eng=parseInt(e);
+			var math=parseInt(m);
+			var tot=kor+eng+math;
+			alert(tot);
+		}
+		function avg(k,e,m) {
+			var kor=parseInt(k);
+			var eng=parseInt(e);
+			var math=parseInt(m);
+			var tot=parseInt((kor+eng+math)/3);
+			alert(tot);
+		}
+		function point(k,e,m) {
+			var kor=parseInt(k);
+			var eng=parseInt(e);
+			var math=parseInt(m);
+			var tot=parseInt((kor+eng+math)/3);
+			if(tot>90){
+				alert("A학점입니다.")
+			}
+			else if(tot>80){
+				alert("B학점입니다.")
+			}
+			else if(tot>70){
+				alert("C학점입니다.")
+			}
+			else if(tot>=60){
+				alert("D학점입니다.")
+			}
+			else if(tot<=59){
+				alert("F학점입니다.")
+			}	
+		}
+		function autumn(k,e,m) {
+			var kor=parseInt(k);
+			var eng=parseInt(e);
+			var math=parseInt(m);
+			var tot=parseInt((kor+eng+math)/3);
+			if(tot>60){
+				alert("재수강하지 않으셔도 됩니다.")
+			}
+			else if(tot<=60){
+				alert("재수강대상자 입니다.")
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		국어:<input type="text" name="kor"><br>
+		영어:<input type="text" name="eng"><br>
+		수학:<input type="text" name="math"><br>
+		<input type="button" value="총점은?" onclick="total(frm1.kor.value,frm1.eng.value,frm1.math.value)">
+		<input type="button" value="평균은?" onclick="avg(frm1.kor.value,frm1.eng.value,frm1.math.value)">
+		<input type="button" value="학점은?" onclick="point(frm1.kor.value,frm1.eng.value,frm1.math.value)">
+		<input type="button" value="재수강여부?" onclick="autumn(frm1.kor.value,frm1.eng.value,frm1.math.value)">
+	</form>
+</body>
+</html>

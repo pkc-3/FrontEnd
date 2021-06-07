@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.table1{border-collapse:collapse;width:500px;border:1px solid #000;}
+		.table1 tr>td{
+			border:1px solid #000;
+			padding: 5px;
+		}
+		.table1 tr>th{border:1px solid #000;padding: 5px;}
+		.table1 tr>td:nth-child(2){width: 250px;}
+		.title{width: 250px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+		.btn1{
+			padding: 7px;background-color: black;color: #fff;border-radius: 5px;cursor: pointer;border:none;
+		}
+		.btn1:hover{opacity: 0.5}
+	</style>
+</head>
+<body>
+	<table class="table1">
+			<tr>
+				<th>번호</th>
+				<th>제목</th>
+				<th>글쓴이</th>
+				<th>날짜</th>
+			</tr>
+			<tr>
+				<th>1</th>
+				<td>안녕하세요</td>
+				<td>홍길동</td>
+				<td>3.3</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>반갑습니다.</td>
+				<td>유관순</td>
+				<td>3.4</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>열심히 해보아요</td>
+				<td>윤봉길</td>
+				<td>3.6</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>
+					<div class="title">
+						올해는 무조건 구매할거에요111111111111111111111111111111
+					</div></td>
+				<td>안중근</td>
+				<td>3.7</td>
+			</tr>
+			<tr>
+				<td colspan="4" align="center"><a href="#"><input type="button" value="공지추가" class="btn1"></a></td>
+			</tr>
+	</table>
+</body>
+</html>

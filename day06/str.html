@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function send() {
+			var name=frm1.name.value;
+			var addr=frm1.addr.value;
+			var age=parseInt(frm1.age.value);
+			var str;
+			//변수와 문자열은 반드시 분리시켜준다.
+			//분리된 문자열과 변수는 +로 결합가능.
+			str="안녕하세요 저는 "+name+"이고 " +addr+"에 삽니다. 나이는 " +age+"살이에요. 잘 좀 부탁드립니다. 10년만 지나면 저도 이제 " +(age+10)+" 살이네요"
+			alert(str);
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		<input type="text" name="name"><br>
+		<input type="text" name="addr"><br>
+		<input type="text" name="age"><br>
+		<input type="button" value="전송"  onclick="send()"><br>
+	</form>
+</body>
+</html>

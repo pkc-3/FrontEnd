@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function fun_plus() {
+			var num1=parseInt(frm1.v1.value);
+			var num2=parseInt(frm1.v2.value);
+			var total= num1+num2;
+			alert("합은 "+total+"입니다.");
+		}
+		function fun_draw() {
+			var num1=parseInt(frm1.v1.value);
+			var num2=parseInt(frm1.v2.value);
+			var total= num1-num2;
+			alert("차는 "+total+"입니다.");
+		}
+		function fun_multiple() {
+			var num1=parseInt(frm1.v1.value);
+			var num2=parseInt(frm1.v2.value);
+			var total= num1*num2;
+			alert("곱은 "+total+"입니다.");
+		}
+		function fun_div() {
+			var num1=parseInt(frm1.v1.value);
+			var num2=parseInt(frm1.v2.value);
+			var total= parseInt(num1/num2);
+			alert("몫은 "+total+"입니다.");
+		}
+		function fun_na() {
+			var num1=parseInt(frm1.v1.value);
+			var num2=parseInt(frm1.v2.value);
+			var total= num1%num2;
+			alert("나머지는 "+total+"입니다.");
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		<input type="text" name="v1">
+		<input type="text" name="v2">
+		<input type="button" value= " + " onclick="fun_plus()">
+		<input type="button" value= " - " onclick="fun_draw()">
+		<input type="button" value= " * " onclick="fun_multiple()">
+		<input type="button" value= " / " onclick="fun_div()">
+		<input type="button" value= " % " onclick="fun_na()">		
+	</form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+*{margin: 0 auto;padding: 0;list-style: none;font-family: "맑은 고딕"}
+a{text-decoration: none;color: inherit;}
+
+#imgslide{width: 1000px;height: 600px;border:1px solid red;position: relative;}
+.imgs{width: 975px;height: 580px;position: relative;border:1px solid blue;margin-top:7px;}
+.imgFrame>img{width: 100%;height: 100%;position: absolute;}
+.welcome{width: 200px;height: 50px;position: absolute;z-index: 1;
+	background-color: rgba(255,255,255,0.7);border-radius: 5px;line-height: 50px;
+	text-align: center;left:45%;top:50%;transform: translateX(-20%);}
+.foot{width: 1000px;height: 600px;}

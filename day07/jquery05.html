@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://code.jquery.com/jquery-1.12.3.min.js">
+	</script>
+	<script>
+		$(function () {
+			$(".btn1").click(function () {
+				$(".area1").css("color","blue");
+				$(".area1").css("font-weight","bold");
+				$(".area1").css("border","1px solid green");
+			})
+			$(".btn2").click(function () {
+				$(".area1").css("font-weight","normal");
+				$(".area1").css("color","#000");
+				$(".area1").css("border","none");
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="area1">하하호호</div>
+	<input type="button" class="btn1" value="누르세요">
+	<input type="button" class="btn2" value="원래대로">
+</body>
+</html>

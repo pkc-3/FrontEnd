@@ -1,0 +1,29 @@
+*{
+	margin: 0 auto;padding: 0;
+	list-style: none;font-family: "맑음 고딕";
+}
+a{text-decoration:none;color: inherit;}
+
+.table1{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin-top: 5px;
+	padding: 0px;
+}
+
+.table1 tr>th{
+	background-color: black;
+	color: white;
+}
+.table1 tr:nth-child(2n){
+	background-color: white;
+}
+.table1 tr:nth-child(2n-1){
+	background-color: pink;
+}
+.table1 tr:not(:last-child):hover{
+	background-color: blue;
+	cursor: pointer;
+}
+
+

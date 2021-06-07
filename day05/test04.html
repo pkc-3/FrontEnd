@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function send(){
+			if(frm1.mm.value==""){
+				alert("이름을 입력하세요");
+				return false;
+			}
+			var name=frm1.mm.value;
+			var addr=frm1.addr.value;
+			alert("이름은:"+name+"주소는:"+addr);
+		}
+	</script>
+</head>
+<body>
+<form name="frm1">
+	<input type="text" name="mm"><br>
+	<input type="text" name="addr"><br>
+	<input type="button" value="누르세요" onclick="send()">
+</form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<title></title>
+<style type="text/css">
+ #pop01{
+  width:300px; height:400px; background:#3d3d3d; color:#fff; 
+  position:absolute; top:10px; left:100px; text-align:center; 
+  border:2px solid #000;display:none;
+   }
+ #pop02{
+  width:300px; height:400px; background:#3d3d3d; color:#fff; 
+  position:absolute; top:10px; left:500px; text-align:center; 
+  border:2px solid #000;display:none;
+   }
+</style>
+<script>
+	$(document).ready(function(){
+		if ($.cookie("nopopup1") != "Y")
+		{
+			$("#pop01").show();
+		}else{
+			$("#pop01").hide();
+		}
+		if($.cookie("nopopup2") != "Y")
+		{
+			$("#pop02").show();
+		}else{
+			$("#pop02").hide();
+		}
+	});	
+	$(function(){
+		$('#close01').click(function() {
+			if (document.frmPopUp.popup01.checked){			
+				$.cookie("nopopup1","Y",{expires:1});
+			}
+			$('#pop01').hide();
+		});		
+		$('#close02').click(function() {
+			if (document.frmPopUp.popup02.checked){			
+				$.cookie("nopopup2","Y",{expires:1});
+			}
+			$('#pop02').hide();
+		});
+	});
+</script>
+</head>
+<body>
+<form name="frmPopUp" method="post" >
+	<div id="pop01">
+		<div style="height:350px;">
+			안녕하세요 늑대털쓴양입니다.<br>
+			<a href="#"><b>팝업강좌 바로가기</b></a>
+		</div>
+		<div>
+			<input type="checkbox" name="popup01" value="checkbox"/>오늘 하루 이창을 다시 열지 않음
+			<div id="close01" style="width:100px; margin:auto; cursor:pointer">close</div>
+		</div>
+	</div>
+	
+	<div id="pop02">
+		<div style="height:350px;">
+			안녕하세요 늑대털쓴양입니다.<br>
+			<a href="#"><b>팝업강좌 바로가기</b></a>
+		</div>
+		<div>
+			<input type="checkbox" name="popup02" value="checkbox"/>오늘 하루 이창을 다시 열지 않음
+			<div id="close02" style="width:100px; margin:auto; cursor:pointer">close</div>
+		</div>
+	</div>
+</form>
+</body>
+</html>

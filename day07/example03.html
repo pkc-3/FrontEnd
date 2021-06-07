@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+			var arrphone=new Array();
+			var arrfood=new Array();
+			var arrchoice=new Array();
+			var arrnumber=new Array();
+			var arrmemo=new Array();
+			var arrtotal=new Array();
+			var cnt=-1;
+
+		function input() {
+			var temp;
+			if(frm1.choice.value=="보통"){
+				var temp=0;
+			}
+			else if(frm1.choice.value=="곱배기"){
+				var temp=1000;
+			}
+
+			var temp1;
+			if(frm1.food.value=="짜장면"){
+				var temp1=6000;
+			}
+			else if(frm1.food.value=="짬뽕"){
+				var temp1=7000;
+			}
+			else if(frm1.food.value=="우동"){
+				var temp1=7000;
+			}
+			else if(frm1.food.value=="볶음밥"){
+				var temp1=7500;
+			}
+
+			var user_food=parseInt(temp1);
+			var user_choice=parseInt(temp);
+			var user_number=parseInt(frm1.number.value);
+			var total=parseInt((user_food+user_choice)*user_number);
+			
+			alert("총 금액은 "+total+"원입니다." );
+			
+			cnt++;
+			arrphone[cnt]=frm1.phone.value;
+			arrfood[cnt]=frm1.food.value;
+			arrchoice[cnt]=frm1.choice.value;
+			arrnumber[cnt]=frm1.number.value;
+			arrmemo[cnt]=frm1.memo.value;
+			arrtotal[cnt]=total+"원";	
+		}
+			
+		function check() {			
+			
+			document.write("<table border=1>");
+			document.write("<th>");
+			document.write("전번");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("메뉴");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("보/곱");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("갯수");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("메모");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("총금액");
+			document.write("</th>");
+			//
+			for(var i=0;i<=cnt;i++){
+			document.write("<tr>");
+			document.write("<td>");
+			document.write(arrphone[i]);
+			document.write("</td>");
+			document.write("<td>");
+			document.write(arrfood[i]);
+			document.write("</td>");			
+			document.write("<td>");
+			document.write(arrchoice[i]);
+			document.write("</td>");			
+			document.write("<td>");
+			document.write(arrnumber[i]);
+			document.write("</td>");			
+			document.write("<td>");
+			document.write(arrmemo[i]);
+			document.write("</td>");
+			document.write("<td>");
+			document.write(arrtotal[i]);
+			document.write("</td>");
+			document.write("</tr>");
+			}
+			//
+			document.write("</table>");
+			
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		전화번호 <input type="text" name="phone"><br>
+		메뉴 <select name="food">
+			<option name="짜장면" value="짜장면">짜장면</option>
+			<option name="짬뽕" value="짬뽕">짬뽕</option>
+			<option name="우동" value="우동">우동</option>
+			<option name="볶음밥" value="볶음밥">볶음밥</option>
+			</select><br>
+		보/곱 <input type="radio" name="choice" value="보통">보통<input type="radio" name="choice" value="곱배기">곱배기<br>
+		갯수 <input type="text" name="number">(그릇)<br>
+		메모 <input type="textarea" name="memo"><br>
+		<input type="button" value="주문" onclick="input()"><input type="button" value="주문확인" onclick="check()">
+	</form>
+</body>
+</html>
+
+

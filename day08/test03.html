@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script>
+		$(function(){
+			$("#menu li").eq(2).mouseover(function (){
+				$("#menu li").eq(2).css("background-color","red");
+			});
+			$("#menu li").eq(2).mouseleave(function (){
+				$("#menu li").eq(2).css("background-color","white");
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	<h1>탐색선택자</h1>
+	<ul id="menu">
+		<li>첫번째메뉴</li>
+		<li>두번째메뉴</li>
+		<li>세번째메뉴</li>
+		<li>네번째메뉴</li>
+		<li>다섯번째메뉴</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function send() {
+			var myage=parseInt(frm1.my.value);
+			var mom_name=(frm1.mom.value);
+			var dad_name=(frm1.dad.value);
+			var bro_name=(frm1.bro.value);
+			alert( "제 나이는 " +myage+"살입니다. 엄마는 "+mom_name+"이구요 저보다 딱 2배 나이가 많은 " +(myage*2)+"살입니다. 아빠는 "+dad_name+"이고요 엄마보다 2살 많은 "+((myage*2)+2)+"살이구요. 동생은 저보다 5살 어린 "+(myage-5)+"살입니다. 우리 "+bro_name+" 잘부탁해요.");
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		내나이:<input type="text" name="my"><br>
+		엄마:<input type="text" name="mom"><br>
+		아빠:<input type="text" name="dad"><br>
+		동생:<input type="text" name="bro"><br>
+		<input type="button" value="출력" onclick="send()">
+	</form>
+</body>
+</html>

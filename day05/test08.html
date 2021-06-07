@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function send() {
+			if(frm1.toeic.value==""){
+				alert("점수를 입력하세요");
+				frm1.toeic.focus();
+				return false;
+			}
+			var toeic=frm1.toeic.value;
+			var level=frm1.level.value;
+			if(toeic>=900){
+				if(level=="상"){
+					alert("합격입니다.");
+				}
+				else if(level=="중"){
+					alert("저희 전산부서에서 교육1년 받고 정식직원채용가능");
+				}
+				else if(level=="하"){
+					alert("아쉽지만 다음 기회에");
+				}
+			}
+
+			else{
+				alert("아쉽지만 다음 기회에");
+			}
+		}
+	</script>
+</head>
+<body>
+<form name="frm1">
+	토익점수:<input type="text" name="toeic"><br>
+	프로그래밍레벨:
+	<select name="level">
+		<option value="상">상</option>
+		<option value="중">중</option>
+		<option value="하">하</option>
+	</select><br>
+	<input type="button" value="합격/불합격" onclick="send()">
+</form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		var arrName=new Array();
+		var arrTel=new Array();
+		var cnt=-1;
+		function input() {
+			cnt++;
+			arrName[cnt]=frm1.name.value;
+			arrTel[cnt]=frm1.tel.value;
+			frm1.name.value="";//공백삽입 (재입력 편의성)
+			frm1.tel.value="";
+			frm1.name.focus();//네임에 포커스 세번째에 함수도 입력가능
+			alert("")
+		}
+		function output(){
+			document.write("<table border = 1 cellspacing = 0 >");
+			document.write("<tr>");
+			document.write("<th>");
+			document.write("이름");
+			document.write("</th>");
+			document.write("<th>");
+			document.write("전화번호");
+			document.write("</th>");
+			document.write("</tr>");
+			//루프문 시작
+			for(var i=0;i<=cnt;i++){
+				document.write("<tr>");
+				document.write("<td>");
+				document.write(arrName[i]);
+				document.write("</td>");
+				document.write("<td>");
+				document.write(arrTel[i]);
+				document.write("</td>");
+				document.write("</tr>");
+			}
+			//루프문 종료
+			document.write("</table>");
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		이름 :<input type="text" name="name"><br>
+		전화번호 :<input type="text" name="tel"><br>
+		<input type="button" value="입력" onclick="input()">
+		<input type="button" value="출력" onclick="output()">
+
+	</form>
+</body>
+</html>
